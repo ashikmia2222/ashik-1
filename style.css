@@ -1,0 +1,285 @@
+/* font-family: 'Archivo', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400; 
+}
+header{
+    background: url(img/onu-advance.jpg) no-repeat center center / cover; 
+}
+img{
+    width: 100%;
+}
+/* navbar css */
+.menubg{
+    background: #0e6104;
+}
+.logo{
+    max-width: 120px;
+}
+.nav-link{
+    font-weight: 700;
+    color: #fff;
+}
+.navbar-nav .nav-link .active{
+    color: #87d37e;
+}
+.nav-link:focus, .nav-link:hover{
+    color: #87d37e;
+}
+
+/* banner css */
+
+.banner-content{
+    padding: 180px 0;
+}
+.banner-content h3,h1{
+    font-weight: 700;
+}
+.banner-content h3,h1,h4{
+    font-family: 'Roboto', sans-serif;
+}
+.banner-content h3{
+    font-size: 40px;
+    color: #fff;
+}
+.banner-content h1{
+    font-size: 100px;
+    margin-top: 8px;
+    color: #fefbef;
+    border: 2px solid #fefbef;
+    padding: 12px 10px;
+}
+.banner-content h1 span{
+    color: #87d37e;
+}
+
+.banner-content h4{
+    font-size: 36px;
+    color: #fff;
+}
+.carousel-indicators [data-bs-target] {
+    
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #87d37e;
+}
+
+.section-title{
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Archivo', sans-serif;
+
+}
+
+/* about section css */
+
+
+.about-meta h3{
+    font-weight: 700;
+    font-size: 24px;
+    transition: .5s;
+}
+.about-meta p{
+    text-align: justify;
+}
+.about-icon i{
+    font-size: 80px;
+    transition: .5s;
+}
+.about-item:hover .about-icon i{
+    color: #87d37e;
+}
+.about-item:hover .about-meta h3{
+    color: #87d37e;
+}
+/* services section css */
+
+#service{
+    background: #e1e1e1;
+}
+.single-service{
+    position: relative;
+    overflow: hidden;
+    
+}
+.service-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    bottom: -100;
+    transition: .5s;
+}
+.service-overlay a {
+    font-size: 24px;
+    color: #fff;
+    border: 1px solid #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.service-overlay a:hover {
+    background-color: #54cf46;
+    border: 1px solid #87d37e;
+    
+}
+.single-service:hover .service-overlay {
+    bottom: 0;
+}
+.navactive{
+    background: #54cf46;
+    border: 1px solid  #54cf46;
+}
+.mix{
+    margin-bottom: 20px;
+}
+
+.single-portfolio {
+    position: relative;
+    overflow: hidden;
+}
+.single-portfolio-overlay {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    background: #0000009c;
+    bottom: -100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.single-portfolio-overlay h3 {
+    color: #fff;
+    font-size: 30px;
+    font-weight: 600;
+}
+.single-portfolio:hover .single-portfolio-overlay {
+    bottom: 0;
+}
+h3.logo-item {
+    color: #54cf46;
+}
+/* pricing card css */
+
+/* font-family: 'Lato', sans-serif;
+font-family: 'Oswald', sans-serif; */
+
+.price-card {
+    background: #39393a;
+    padding: 20px 50px;
+    border-radius: 6px;
+    text-align: center;
+    color: #fff;
+    transition: .5s;
+}
+.price-card-top{
+    border: 3px solid #fff;
+    width: 140px;
+    height: 140px;
+    margin: 20px auto;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: .5s;
+}
+.price-card-top h2, h4 {
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 700;
+}
+.price-card-top h2 {
+    font-size: 29px;
+
+}
+.price-card-top h2 sup,sub {
+    font-size: 24px;
+    font-family: 'Lato', sans-serif;
+}
+.feature-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.feature-list li {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+.btn-order {
+    display: inline-block;
+    background: #fff;
+    padding: 10px 20px;
+    color: #39393a;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    transition: .5s;
+    text-decoration: none;
+}
+.price-card:hover {
+    background: #87d37e;
+}
+.price-card:hover .price-card-top {
+    background-color: #fff;
+    color: #87d37e;
+}
+.price-card:hover .btn-order {
+    color: #87d37e;
+}
+
+/* counter area css */
+.counter-area{
+    background: url(img/counter-bg.png) no-repeat center center / cover ;
+    padding: 105px 0;
+}
+.single-counter{
+    border: 2px solid #fff;
+    color: #fff;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.4);
+}
+.single-counter h1 {
+    font-size: 72px;
+}
+.single-counter h1,h4 {
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.single-counter h4 {
+    font-size: 18px;
+}
+.contact-form{
+    background: #e5e7ed;
+}
+button.btn-submit{
+    display: inline-block;
+    border: none;
+    background: #54cf46;
+    color: #fff;
+    padding: 12px 24px;
+    font-weight: 600;
+}
+::placeholder{
+    font-style: italic;
+}
